@@ -20,7 +20,7 @@ class CommentServiceImpl : CommentService {
 
 
     override fun listPage(pageable: Pageable): Page<Comment> {
-        return commentRespository.listPage(pageable)
+        return commentRespository.findAll(pageable)
     }
 
     @Autowired lateinit var commentRespository: CommentRespository
