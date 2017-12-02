@@ -1,3 +1,5 @@
+CREATE SCHEMA `next_j2ee` DEFAULT CHARACTER SET utf8mb4 ;
+
 show TABLES ;
 
 desc article;
