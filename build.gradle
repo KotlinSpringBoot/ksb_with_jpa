@@ -45,4 +45,6 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib-jre8")
     compile("org.jetbrains.kotlin:kotlin-reflect")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    compile('com.alibaba:fastjson:1.2.41')
 }

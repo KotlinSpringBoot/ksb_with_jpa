@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController
 class CommentController {
     @Autowired lateinit var commentRespository: CommentRespository
 
-    @GetMapping(value = "/getPage")
+    @GetMapping(value = *arrayOf("", "/"))
     fun findPage(@RequestParam(value = "page", defaultValue = "0") page: Int,
                  @RequestParam(value = "size", defaultValue = "10") size: Int): Page<Comment> {
         return commentRespository.findAll(PageRequest.of(page, size))
